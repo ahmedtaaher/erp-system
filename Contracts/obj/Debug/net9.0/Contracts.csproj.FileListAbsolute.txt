@@ -1,0 +1,12 @@
+E:\ERPSystem\Contracts\bin\Debug\net9.0\Contracts.deps.json
+E:\ERPSystem\Contracts\bin\Debug\net9.0\Contracts.dll
+E:\ERPSystem\Contracts\bin\Debug\net9.0\Contracts.pdb
+E:\ERPSystem\Contracts\obj\Debug\net9.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+E:\ERPSystem\Contracts\obj\Debug\net9.0\Contracts.AssemblyInfoInputs.cache
+E:\ERPSystem\Contracts\obj\Debug\net9.0\Contracts.AssemblyInfo.cs
+E:\ERPSystem\Contracts\obj\Debug\net9.0\Contracts.csproj.CoreCompileInputs.cache
+E:\ERPSystem\Contracts\obj\Debug\net9.0\Contracts.sourcelink.json
+E:\ERPSystem\Contracts\obj\Debug\net9.0\Contracts.dll
+E:\ERPSystem\Contracts\obj\Debug\net9.0\refint\Contracts.dll
+E:\ERPSystem\Contracts\obj\Debug\net9.0\Contracts.pdb
+E:\ERPSystem\Contracts\obj\Debug\net9.0\ref\Contracts.dll
