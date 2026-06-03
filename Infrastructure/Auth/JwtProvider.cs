@@ -22,7 +22,8 @@ namespace Infrastructure.Auth
       {
         new Claim("userId", user.Id.ToString()),
         new Claim("tenantId", user.TenantId.ToString()),
-        new Claim("email", user.Email)
+        new Claim("email", user.Email),
+        new Claim(ClaimTypes.Role, user.Role)
       };
 
       var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_settings.Key));

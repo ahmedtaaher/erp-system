@@ -5,6 +5,7 @@ namespace Application.Common.Interfaces
     Guid UserId { get; }
     Guid TenantId { get; }
     string Email { get; }
+    string Role { get; }
     bool IsAuthenticated { get; }
   }
 }

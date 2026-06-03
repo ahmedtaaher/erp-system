@@ -1617,6 +1617,16 @@
           "bin/placeholder/Application.dll": {}
         }
       },
+      "Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contracts.dll": {}
+        }
+      },
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -4737,6 +4747,11 @@
       "path": "../Application/Application.csproj",
       "msbuildProject": "../Application/Application.csproj"
     },
+    "Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Contracts/Contracts.csproj",
+      "msbuildProject": "../Contracts/Contracts.csproj"
+    },
     "Domain/1.0.0": {
       "type": "project",
       "path": "../Domain/Domain.csproj",
@@ -4751,6 +4766,7 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "Application >= 1.0.0",
+      "Contracts >= 1.0.0",
       "FluentValidation.AspNetCore >= 11.3.1",
       "Infrastructure >= 1.0.0",
       "MediatR >= 14.1.0",
@@ -4795,6 +4811,9 @@
           "projectReferences": {
             "E:\\ERPSystem\\Application\\Application.csproj": {
               "projectPath": "E:\\ERPSystem\\Application\\Application.csproj"
+            },
+            "E:\\ERPSystem\\Contracts\\Contracts.csproj": {
+              "projectPath": "E:\\ERPSystem\\Contracts\\Contracts.csproj"
             },
             "E:\\ERPSystem\\Infrastructure\\Infrastructure.csproj": {
               "projectPath": "E:\\ERPSystem\\Infrastructure\\Infrastructure.csproj"

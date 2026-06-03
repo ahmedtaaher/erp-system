@@ -21,6 +21,8 @@ namespace Infrastructure.Identity
 
     public string Email => GetClaim("email");
 
+    public string Role => GetClaim(ClaimTypes.Role);
+
     private string GetClaim(string type)
     {
       return _httpContextAccessor.HttpContext?.User?.FindFirstValue(type) ?? string.Empty;
