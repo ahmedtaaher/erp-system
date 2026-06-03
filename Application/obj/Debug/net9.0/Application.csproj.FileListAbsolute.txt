@@ -14,3 +14,5 @@ E:\ERPSystem\Application\obj\Debug\net9.0\Application.dll
 E:\ERPSystem\Application\obj\Debug\net9.0\refint\Application.dll
 E:\ERPSystem\Application\obj\Debug\net9.0\Application.pdb
 E:\ERPSystem\Application\obj\Debug\net9.0\ref\Application.dll
+E:\ERPSystem\Application\bin\Debug\net9.0\Contracts.dll
+E:\ERPSystem\Application\bin\Debug\net9.0\Contracts.pdb

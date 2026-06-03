@@ -372,6 +372,16 @@
           }
         }
       },
+      "Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contracts.dll": {}
+        }
+      },
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -1031,6 +1041,11 @@
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
+    "Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Contracts/Contracts.csproj",
+      "msbuildProject": "../Contracts/Contracts.csproj"
+    },
     "Domain/1.0.0": {
       "type": "project",
       "path": "../Domain/Domain.csproj",
@@ -1040,6 +1055,7 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
+      "Contracts >= 1.0.0",
       "Domain >= 1.0.0",
       "FluentValidation >= 12.1.1",
       "MediatR >= 14.1.0",
@@ -1079,6 +1095,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "E:\\ERPSystem\\Contracts\\Contracts.csproj": {
+              "projectPath": "E:\\ERPSystem\\Contracts\\Contracts.csproj"
+            },
             "E:\\ERPSystem\\Domain\\Domain.csproj": {
               "projectPath": "E:\\ERPSystem\\Domain\\Domain.csproj"
             }

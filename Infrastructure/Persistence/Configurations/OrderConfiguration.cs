@@ -11,6 +11,8 @@ namespace Infrastructure.Persistence.Configurations
       builder.Property(x => x.TotalAmount).HasPrecision(18,2);
 
       builder.HasMany(x => x.Items).WithOne(x => x.Order).HasForeignKey(x => x.OrderId);
+      
+      builder.Property(x => x.Version).HasColumnName("xmin").HasColumnType("xid").ValueGeneratedOnAddOrUpdate().IsConcurrencyToken();
     }
   }
 }

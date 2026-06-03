@@ -142,6 +142,9 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
+              "E:\\ERPSystem\\Contracts\\Contracts.csproj": {
+                "projectPath": "E:\\ERPSystem\\Contracts\\Contracts.csproj"
+              },
               "E:\\ERPSystem\\Domain\\Domain.csproj": {
                 "projectPath": "E:\\ERPSystem\\Domain\\Domain.csproj"
               }

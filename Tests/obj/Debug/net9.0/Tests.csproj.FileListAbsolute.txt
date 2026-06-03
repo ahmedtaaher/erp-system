@@ -16,3 +16,5 @@ E:\ERPSystem\Tests\obj\Debug\net9.0\Tests.dll
 E:\ERPSystem\Tests\obj\Debug\net9.0\refint\Tests.dll
 E:\ERPSystem\Tests\obj\Debug\net9.0\Tests.pdb
 E:\ERPSystem\Tests\obj\Debug\net9.0\ref\Tests.dll
+E:\ERPSystem\Tests\bin\Debug\net9.0\Contracts.dll
+E:\ERPSystem\Tests\bin\Debug\net9.0\Contracts.pdb

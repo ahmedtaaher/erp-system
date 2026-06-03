@@ -172,3 +172,5 @@ E:\ERPSystem\API\obj\Debug\net9.0\refint\API.dll
 E:\ERPSystem\API\obj\Debug\net9.0\API.pdb
 E:\ERPSystem\API\obj\Debug\net9.0\API.genruntimeconfig.cache
 E:\ERPSystem\API\obj\Debug\net9.0\ref\API.dll
+E:\ERPSystem\API\bin\Debug\net9.0\Contracts.dll
+E:\ERPSystem\API\bin\Debug\net9.0\Contracts.pdb

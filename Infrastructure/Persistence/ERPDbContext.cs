@@ -4,12 +4,15 @@ using Domain.Common;
 using Domain.Common.Interfaces;
 using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace Infrastructure.Persistence
 {
   public class ERPDbContext : DbContext, IApplicationDbContext
   {
     private readonly ITenantProvider _tenantProvider;
+    private IDbContextTransaction? _transaction;
     public ERPDbContext(DbContextOptions<ERPDbContext> options, ITenantProvider tenantProvider) : base(options)
     {
       _tenantProvider = tenantProvider;
@@ -37,6 +40,28 @@ namespace Infrastructure.Persistence
           method.Invoke(this, new object[] { builder });
         }
       }
+    }
+
+    public new EntityEntry Entry(object entity)
+    {
+      return base.Entry(entity);
+    }
+
+    public async Task BeginTransactionAsync(CancellationToken ct)
+    {
+      _transaction = await Database.BeginTransactionAsync(ct);
+    }
+
+    public async Task CommitTransactionAsync(CancellationToken ct)
+    {
+      if (_transaction != null)
+        await _transaction.CommitAsync(ct);
+    }
+
+    public async Task RollbackTransactionAsync(CancellationToken ct)
+    {
+      if (_transaction != null)
+        await _transaction.RollbackAsync(ct);
     }
 
     private void SetTenantFilter<TEntity>(ModelBuilder builder) where TEntity : BaseTenantEntity

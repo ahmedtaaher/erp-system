@@ -9,6 +9,7 @@
       "API/1.0.0": {
         "dependencies": {
           "Application": "1.0.0",
+          "Contracts": "1.0.0",
           "FluentValidation.AspNetCore": "11.3.1",
           "Infrastructure": "1.0.0",
           "MediatR": "14.1.0",
@@ -1059,6 +1060,7 @@
       "Application/1.0.0": {
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "Contracts": "1.0.0",
           "Domain": "1.0.0",
           "FluentValidation": "12.1.1",
           "MediatR": "14.1.0",
@@ -1067,6 +1069,14 @@
         },
         "runtime": {
           "Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Contracts/1.0.0": {
+        "runtime": {
+          "Contracts.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1671,6 +1681,11 @@
       "hashPath": "system.threading.channels.7.0.0.nupkg.sha512"
     },
     "Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Contracts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
