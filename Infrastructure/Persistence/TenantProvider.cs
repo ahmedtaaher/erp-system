@@ -1,3 +1,4 @@
+using Application.Common.Interfaces;
 using Domain.Common.Interfaces;
 using Microsoft.AspNetCore.Http;
 
@@ -5,21 +6,13 @@ namespace Infrastructure.Persistence
 {
   public class TenantProvider : ITenantProvider
   {
-    private readonly IHttpContextAccessor _httpContextAccessor;
+    private readonly ICurrentUser _currentUser;
 
-    public TenantProvider(IHttpContextAccessor accessor)
+    public TenantProvider(ICurrentUser currentUser)
     {
-      _httpContextAccessor = accessor;
+      _currentUser = currentUser;
     }
 
-    public Guid TenantId
-    {
-      get
-      {
-        var value = _httpContextAccessor.HttpContext?.Request.Headers["X-Tenant-Id"].FirstOrDefault();
-        
-        return Guid.TryParse(value, out var tenantId)? tenantId: Guid.Empty;
-      }
-    }
+    public Guid TenantId => _currentUser.TenantId;
   }
 }
